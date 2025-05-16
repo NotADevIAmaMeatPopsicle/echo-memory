@@ -48,14 +48,17 @@ The Echo system is an experimental approach to **Augmented LLM Cognition** for s
     *   **Technical Implication:** This allows the Echo system to **"self-onboard"** to a project, creating its own structured understanding. The Memory Bank becomes living documentation, co-created and maintained by Echo and human developers. Echo may ask clarifying questions during this process to ensure accuracy, particularly regarding high-level project goals or ambiguous code sections.
 
 ## 💡 Influences, Inspirations & Relevant Research
+*   **Prompt Engineering Best Practices:** We heavily leverage principles such as defining a clear Persona, Task, Context, and Format, as outlined in guides like Google's **[Prompting guide 101 (Gemini for Google Workspace, Oct 2024 edition)](https://www.google.com/url?q=https://www.example.com/prompting_guide_101)** (Replace with actual link or keep as citation). The structure of `prompts/echo_system_prompt.md` directly reflects these principles.
+*   **Agentic AI Systems & Hierarchical Task Delegation:** Concepts explored by researchers and tools focusing on multi-agent systems and breaking down tasks for AI. Videos demonstrating practical applications of "micromanaging" LLMs or using "remote agents" have been particularly insightful:
+    *   [Video 1: "Micromanaging Llama 4 for Effective Coding"](https://www.youtube.com/watch?v=VCAa1Isygck) - Demonstrates the planner/executor concept with different model tiers.
+    *   [Video 2: "AI Assisted Coding Is About to Massively Change - Remote Agents"](https://www.youtube.com/watch?v=2c6djdv2Xbo) - Highlights asynchronous task offloading and contextual integrity.
+    *   [Video 3: (Griff's initial inspiration video)](https://www.youtube.com/watch?v=Kw9PPH0N_UY) - Showcased model switching and iterative refinement.
+*   **Externalized Memory and RAG (Retrieval Augmented Generation):** While this POC uses direct file access for the Memory Bank, its structure is designed to be compatible with future RAG implementations where the AI could semantically query its knowledge base.
+*   **Cognitive Architectures for AI:** Exploring how structured external knowledge and explicit operational protocols can enhance the reasoning and reliability of LLMs for complex, multi-step tasks.
 
-*   **Prompt Engineering Best Practices:** Google's **Prompting guide 101 (Gemini for Google Workspace, 2024 edition)**.
-*   **Agentic AI Systems & Hierarchical Task Delegation:**
-    *   [Video 1: "Micromanaging Llama 4"](https://www.youtube.com/watch?v=VCAa1Isygck)
-    *   [Video 2: "Remote Agents"](https://www.youtube.com/watch?v=2c6djdv2Xbo)
-    *   [Video 3: "AI Agents and Model Switching"](https://www.youtube.com/watch?v=Kw9PPH0N_UY)
-*   **Externalized Memory and RAG.**
-*   **Cognitive Architectures for AI.**
+
+
+
 
 ## 🏗️ Project Structure Overview
 
