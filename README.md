@@ -38,7 +38,7 @@ The Echo system is an experimental approach to **Augmented LLM Cognition** for s
     *   **Problem Addressed:** Adherence to software engineering best practices can be inconsistent.
     *   **Our Approach:** The task template and Echo's operational directives explicitly include requirements for environmental verification, testing (`testingContext.md`), and structured updates to `activeContext.md` and `progress.md`, effectively embedding these practices into the AI's workflow.
 
-**6. Retroactive Documentation & Onboarding to Existing Projects:**
+6.  **Retroactive Documentation & Onboarding to Existing Projects:**
     *   **Problem Addressed:** Integrating AI assistance into legacy projects or codebases with sparse documentation is a significant hurdle.
     *   **Our Approach & Key Insight:** A powerful application of the Echo system prompt occurs when it's first introduced to an *existing project*. Guided by its "Memory Bank Bootstrap Protocol" (Directive 7 in `prompts/echo_system_prompt.md`), Echo can be tasked with systematically reviewing the existing codebase and project artifacts. It then attempts to populate the `memory-bank/` structure by:
         *   Summarizing existing READMEs or design documents into `productContext.md` or `system/overview.md`.
