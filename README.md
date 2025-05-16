@@ -1,8 +1,12 @@
 # Echo Hierarchical Coding System
 
-Welcome to the Echo Hierarchical Coding System! This repository contains an AI-driven software development framework designed to enhance code quality, consistency, and development efficiency through structured documentation and intelligent task delegation.
+Welcome to the Echo Hierarchical Coding System! This repository serves as a **live demonstration** of an AI-driven software development framework designed to enhance code quality, consistency, and development efficiency through structured documentation and intelligent task delegation.
 
-**The core idea is to empower an AI persona named "Echo" to act as an expert Software Architect and Lead Developer. Due to a simulated periodic memory reset, Echo relies entirely on a comprehensive "Memory Bank" and detailed "Task Files" to function effectively.**
+## 🔍 The Prompt is the Focus
+
+**The primary focus of this project is the system prompt** defined in [`prompts/echo_system_prompt.md`](prompts/echo_system_prompt.md). This prompt creates an AI persona named "Echo" that acts as an expert Software Architect and Lead Developer. Due to a simulated periodic memory reset, Echo relies entirely on a comprehensive "Memory Bank" and detailed "Task Files" to function effectively.
+
+This repository demonstrates what the system looks like when deployed, with a fully initialized memory bank and task structure that Echo can navigate and utilize.
 
 ## Key Features & Philosophy
 
@@ -37,10 +41,10 @@ Welcome to the Echo Hierarchical Coding System! This repository contains an AI-d
 
 ## Getting Started
 
-1.  **Thoroughly read the [`README_SYSTEM_OVERVIEW.md`](README_SYSTEM_OVERVIEW.md)** to understand the full system architecture and principles.
-2.  Familiarize yourself with the "Echo" persona by reviewing [`prompts/echo_system_prompt.md`](prompts/echo_system_prompt.md).
-3.  Understand the structure and importance of the [`memory-bank/`](memory-bank/) and the format of task files by looking at [`tasks/TEMPLATE.md`](tasks/TEMPLATE.md) and example tasks.
-4.  If you plan to contribute to or run the automated parts of the system (like the CrewAI POC detailed in `tasks/CREW-001-CrewAI_Orchestration_POC.md`):
+1.  **Start by reviewing the [`prompts/echo_system_prompt.md`](prompts/echo_system_prompt.md)** to understand the Echo persona and how it operates.
+2.  **Thoroughly read the [`README_SYSTEM_OVERVIEW.md`](README_SYSTEM_OVERVIEW.md)** to understand the full system architecture and principles.
+3.  Explore the structure and importance of the [`memory-bank/`](memory-bank/) and the format of task files by looking at [`tasks/TEMPLATE.md`](tasks/TEMPLATE.md) and example tasks.
+4.  If you plan to implement this system or run the automated parts (like the CrewAI POC detailed in `tasks/CREW-001-CrewAI_Orchestration_POC.md`):
     *   Ensure you have the necessary LLM API keys.
     *   Set up a Python virtual environment and install dependencies from `requirements.txt`.
     *   Configure your API keys in a `.env` file at the project root.
@@ -56,4 +60,15 @@ Welcome to the Echo Hierarchical Coding System! This repository contains an AI-d
 7.  **Update Documentation:** Update `activeContext.md`, `progress.md`, and any relevant Memory Bank or task files.
 
 ---
+## Why This Matters
+
+This project demonstrates a novel approach to AI-assisted development that addresses key challenges:
+
+1. **Overcoming LLM Context Limitations**: By using a structured external memory system
+2. **Ensuring Consistency**: Through standardized documentation and task formats
+3. **Enabling Complex Projects**: By breaking down tasks into manageable, AI-executable steps
+4. **Promoting Best Practices**: Documentation-first and test-driven development are built into the workflow
+
+You can use this prompt and structure as a template for your own AI-assisted development projects, or adapt the concepts to create similar systems with different focuses.
+
 This system represents an ongoing research effort into building robust, context-aware, and efficient AI-assisted software development workflows. Contributions and feedback are welcome!
