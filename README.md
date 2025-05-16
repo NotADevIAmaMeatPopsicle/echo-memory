@@ -1,4 +1,3 @@
-```markdown
 # Echo Hierarchical Coding System - A Research Demonstrator
 
 Welcome to the Echo Hierarchical Coding System! This repository serves as a **live demonstration and research artifact** exploring an AI-driven software development framework. Our primary goal is to enhance code quality, consistency, and development efficiency by addressing common limitations in Large Language Model (LLM) application for complex software engineering tasks. We achieve this through highly structured documentation, meticulous planning enforced by an AI persona, and intelligent task delegation.
@@ -52,7 +51,7 @@ The Echo system is an experimental approach to **Augmented LLM Cognition** for s
 
 The design of this system draws inspiration from and aims to contribute to ongoing research in several areas:
 
-*   **Prompt Engineering Best Practices:** We heavily leverage principles such as defining a clear Persona, Task, Context, and Format, as outlined in guides like Google's **[Prompting guide 101 (Gemini for Google Workspace, Oct 2024 edition)](https://www.google.com/url?q=https://www.example.com/prompting_guide_101)** (Replace with actual link or keep as citation). The structure of `prompts/echo_system_prompt.md` directly reflects these principles.
+*   **Prompt Engineering Best Practices:** We heavily leverage principles such as defining a clear Persona, Task, Context, and Format, as outlined in guides like Google's **Prompting guide 101 (Gemini for Google Workspace, 2024 edition)**. The structure of `prompts/echo_system_prompt.md` directly reflects these principles.
 *   **Agentic AI Systems & Hierarchical Task Delegation:** Concepts explored by researchers and tools focusing on multi-agent systems and breaking down tasks for AI. Videos demonstrating practical applications of "micromanaging" LLMs or using "remote agents" have been particularly insightful:
     *   [Example Video 1: "Micromanaging Llama 4 for Effective Coding"](https://www.youtube.com/watch?v=VCAa1Isygck) - Demonstrates the planner/executor concept with different model tiers.
     *   [Example Video 2: "AI Assisted Coding Is About to Massively Change - Remote Agents"](https://www.youtube.com/watch?v=2c6djdv2Xbo) - Highlights asynchronous task offloading and contextual integrity.
@@ -61,8 +60,6 @@ The design of this system draws inspiration from and aims to contribute to ongoi
 *   **Cognitive Architectures for AI:** Exploring how structured external knowledge and explicit operational protocols can enhance the reasoning and reliability of LLMs for complex, multi-step tasks.
 
 ## 🏗️ Project Structure Overview
-
-*(This section can remain largely as you have it, as it's a good factual description. I'll include it for completeness.)*
 
 *   **`README_SYSTEM_OVERVIEW.md`**: **For a deeper dive into the system's conceptual architecture and operational workflow.**
 *   **`memory-bank/`**: The persistent knowledge base.
