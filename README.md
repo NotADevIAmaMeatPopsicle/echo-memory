@@ -84,6 +84,8 @@ The Echo system is an experimental approach to **Augmented LLM Cognition** for s
 3.  **Initial Setup in Your Project:**
     *   In your chosen IDE or LLM interaction environment (e.g., VS Code with Cline/Roo, or a custom script), load the content of `prompts/echo_system_prompt.md` as the system prompt for your primary LLM instance (which will now act as Echo).
     *   You don't need to manually create any files or folders beforehand.
+    *   Set your custom temp to .5 when using gemini 2.5 for the happy place. 
+    *   Use gemini 2.5 pro for the task creation and 2.5 flash for the coding and just be amazed.
 4.  **Initiate Echo & Memory Bank Bootstrap:**
     *   Start your first session with Echo by issuing a command like: **"Initialize Memory Bank."**
     *   Echo will then begin its "Memory Bank Bootstrap Protocol" (as per Directive 7 of its system prompt).
