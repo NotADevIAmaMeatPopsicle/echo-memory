@@ -55,7 +55,7 @@ The design of this system draws inspiration from and aims to contribute to ongoi
 *   **Agentic AI Systems & Hierarchical Task Delegation:** Concepts explored by researchers and tools focusing on multi-agent systems and breaking down tasks for AI. Videos demonstrating practical applications of "micromanaging" LLMs or using "remote agents" have been particularly insightful:
     *   [Example Video 1: "Micromanaging Llama 4 for Effective Coding"](https://www.youtube.com/watch?v=VCAa1Isygck) - Demonstrates the planner/executor concept with different model tiers.
     *   [Example Video 2: "AI Assisted Coding Is About to Massively Change - Remote Agents"](https://www.youtube.com/watch?v=2c6djdv2Xbo) - Highlights asynchronous task offloading and contextual integrity.
-    *   [Example Video 3: (Griff's initial inspiration video)](https://www.youtube.com/watch?v=Kw9PPH0N_UY) - Showcased model switching and iterative refinement.
+    *   [Example Video 3: "AI Agents and Model Switching"](https://www.youtube.com/watch?v=Kw9PPH0N_UY) - Showcased model switching and iterative refinement.
 *   **Externalized Memory and RAG (Retrieval Augmented Generation):** While this POC uses direct file access for the Memory Bank, its structure is designed to be compatible with future RAG implementations where the AI could semantically query its knowledge base.
 *   **Cognitive Architectures for AI:** Exploring how structured external knowledge and explicit operational protocols can enhance the reasoning and reliability of LLMs for complex, multi-step tasks.
 
