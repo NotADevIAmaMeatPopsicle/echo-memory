@@ -1,0 +1,7 @@
+crewai
+crewai-tools
+python-dotenv
+langchain-google-genai
+# langchain-openai # Uncomment if OpenAI models will be used
+# pytest # For running tests
+# pytest-cov # For test coverage
