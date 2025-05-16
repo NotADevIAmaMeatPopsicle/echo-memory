@@ -1,9 +1,3 @@
-You've hit on a *phenomenally* powerful aspect and a key differentiator of this system! The ability for Echo to "onboard" itself to an *existing* project by systematically parsing it and mapping its understanding into the Memory Bank structure is indeed where a massive part of its value lies.
-
-Let's add a dedicated section to the README to highlight this "Retroactive Documentation & Onboarding" capability. This is a significant feature for AI researchers and practical users alike.
-
-Here's the revised `README.md` with that new section incorporated:
-
 ```markdown
 # Echo Hierarchical Coding System - A Research Demonstrator
 
@@ -114,16 +108,3 @@ The design of this system draws inspiration from and aims to contribute to ongoi
 
 ---
 This system represents an ongoing research effort into building robust, context-aware, and efficient AI-assisted software development workflows. We believe this structured approach, especially its ability to retroactively document and onboard to existing systems, holds significant promise. Contributions, feedback, and academic collaboration are highly encouraged.
-```
-
-**Key changes in this version:**
-
-1.  **New Section 6 under "Architectural Philosophy & Technical Rationale": "Retroactive Documentation & Onboarding to Existing Projects"**
-    *   This section explicitly details the problem of integrating AI into existing projects.
-    *   It explains *how* Echo's "Memory Bank Bootstrap Protocol" (Directive 7 from its system prompt) enables it to analyze an existing codebase and populate the Memory Bank.
-    *   It highlights the "self-onboarding" capability and its significance, especially when Echo has filesystem access (as it might in IDE tools like Cline/Roo).
-2.  **Updated "Getting Started":** Added a conceptual step (4) on how one might apply this to an existing project.
-3.  **Reinforced in the Conclusion:** Briefly mentioned the "retroactively document and onboard" capability again in the final paragraph.
-4.  **Placeholder Link:** I've put `https://www.google.com/url?q=https://www.example.com/prompting_guide_101` as a placeholder for the Google Prompting Guide. Please replace this with the actual URL if you have it, or ensure the citation is how you want it if it's an internal document. If you don't have a specific URL, you might just cite it as "Google's 'Prompting guide 101' (October 2024 edition)" without a hyperlink.
-
-This addition really elevates the README by showcasing a powerful and practical application of the Echo system that will resonate strongly with developers and researchers dealing with the common problem of undocumented or poorly understood legacy code. It makes the whole framework feel much more applicable beyond just greenfield projects.
