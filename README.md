@@ -1,5 +1,42 @@
 # Echo Hierarchical Coding System - A Research Demonstrator
 
+**Quick Start: What is This?**
+
+At its heart, the Echo Hierarchical Coding System is a powerful **system prompt** (found in `prompts/echo_system_prompt.md`). You use this prompt with your favorite Large Language Model (LLM) directly within your development environment—like VS Code (using extensions such as Cline or Roo), Cursor, or through chat interfaces like Claude, ChatGPT, Gemini, etc.
+
+Think of "Echo" as an AI assistant that's exceptionally good at understanding, organizing, and helping you build software projects. It's designed to help you create higher-quality software more consistently by:
+
+*   **Remembering everything important** about your project in a structured "Memory Bank."
+*   **Breaking down complex tasks** into manageable, documented steps.
+*   **Guiding you to follow documentation and best practices** as you code.
+
+**How it Works:**
+
+*   **For an Existing Project:**
+    *   When you first run Echo in a folder with an existing project and tell it to "Initialize Memory Bank," it will:
+        *   Scan your current codebase, READMEs, and any existing documentation.
+        *   Automatically create and populate a `memory-bank/` directory. This builds a structured understanding of your project's goals, technologies, architecture, and components.
+        *   Essentially, it "onboards" itself to your project, ready to assist with a deep contextual understanding.
+
+*   **For a New Project:**
+    *   If you're starting from scratch, Echo will:
+        *   Guide you through creating the necessary project structure (like `memory-bank/`, `tasks/`, etc.) if it doesn't exist.
+        *   Ask you questions to define the core aspects of your new application.
+        *   **Minimum Seed Information to Provide Echo:**
+            *   The main idea or goal of the project (e.g., "A web app for tracking personal fitness goals").
+            *   Key technologies you plan to use, if known (e.g., "Python with Flask for the backend, React for the frontend").
+        *   Help you create initial task files and plan out the first steps.
+
+**Pro Tips for Optimal Use (especially with Gemini):**
+*   Set your custom temperature to `0.5` when using Gemini 2.5 Pro for the "happy place" in terms of creativity and coherence for planning.
+*   Use Gemini 2.5 Pro for task creation and detailed planning.
+*   Use Gemini 2.5 Flash for generating code based on those detailed plans – you might be amazed by the efficiency!
+
+Once set up, Echo acts as an expert architect and lead developer, using its Memory Bank and detailed task plans to help you write, refactor, and document code efficiently.
+
+---
+
+
 Welcome to the Echo Hierarchical Coding System! This repository serves as a **live demonstration and research artifact** exploring an AI-driven software development framework. Our primary goal is to enhance code quality, consistency, and development efficiency by addressing common limitations in Large Language Model (LLM) application for complex software engineering tasks. We achieve this through highly structured documentation, meticulous planning enforced by an AI persona, and intelligent task delegation.
 
 ## 🔍 The Core Research: System Prompt & Structured Cognition
