@@ -1,159 +1,143 @@
-# Echo Hierarchical Coding System - A Research Demonstrator
+# Echo Task Management System
 
-**Quick Start: What is This?**
+A production-ready task management and development framework designed for enterprise-grade software development. Built for seamless integration between Claude Code and Echo (.roo) AI systems.
 
-At its heart, the Echo Hierarchical Coding System is a powerful **system prompt** (found in `prompts/echo_system_prompt.md`). You use this prompt with your favorite Large Language Model (LLM) directly within your development environment—like VS Code (using extensions such as Cline or Roo), Cursor, or through chat interfaces like Claude, ChatGPT, Gemini, etc.
+## Overview
 
-Think of "Echo" as an AI assistant that's exceptionally good at understanding, organizing, and helping you build software projects. It's designed to help you create higher-quality software more consistently by:
+The Echo Task Management System provides:
 
-*   **Remembering everything important** about your project in a structured "Memory Bank."
-*   **Breaking down complex tasks** into manageable, documented steps.
-*   **Guiding you to follow documentation and best practices** as you code.
+- **5-State Task Workflow**: BLOCKED | READY | IN_PROGRESS | TESTING | DONE
+- **Research-First Approach**: Comprehensive technical analysis before implementation
+- **Validation Gates**: Pre-work, mid-work, and completion quality checks
+- **Cross-System Coordination**: Seamless handoffs between Claude Code and Echo
+- **Memory Bank**: Persistent documentation and project context
+- **Elite Standards**: Production-ready code with 90%+ test coverage
 
-**How it Works:**
+## Core Components
 
-*   **For an Existing Project:**
-    *   When you first run Echo in a folder with an existing project and tell it to "Initialize Memory Bank," it will:
-        *   Scan your current codebase, READMEs, and any existing documentation.
-        *   Automatically create and populate a `memory-bank/` directory. This builds a structured understanding of your project's goals, technologies, architecture, and components.
-        *   Essentially, it "onboards" itself to your project, ready to assist with a deep contextual understanding.
+### Task Management
+- **ECHO-TASK-REGISTRY.md**: Single source of truth for all tasks
+- **Elite Task Templates**: Standardized task structure with acceptance criteria
+- **Status Tracking**: Rigorous progress monitoring with validation gates
+- **Dependency Management**: Automated dependency validation and fixing
 
-*   **For a New Project:**
-    *   If you're starting from scratch, Echo will:
-        *   Guide you through creating the necessary project structure (like `memory-bank/`, `tasks/`, etc.) if it doesn't exist.
-        *   Ask you questions to define the core aspects of your new application.
-        *   **Minimum Seed Information to Provide Echo:**
-            *   The main idea or goal of the project (e.g., "A web app for tracking personal fitness goals").
-            *   Key technologies you plan to use, if known (e.g., "Python with Flask for the backend, React for the frontend").
-        *   Help you create initial task files and plan out the first steps.
+### Memory Bank
+- **Persistent Context**: Project knowledge that survives AI memory resets
+- **Living Documentation**: Actively maintained project documentation
+- **Component Structure**: Organized by system components and concerns
+- **Progress Tracking**: Historical context and milestone documentation
 
-**Pro Tips for Optimal Use (especially with Gemini):**
-*   Set your custom temperature to `0.5` when using Gemini 2.5 Pro for the "happy place" in terms of creativity and coherence for planning.
-*   Use Gemini 2.5 Pro for task creation and detailed planning.
-*   Use Gemini 2.5 Flash for generating code based on those detailed plans – you might be amazed by the efficiency!
+### Cross-System Integration
+- **Claude Code Integration**: Shared CLAUDE.md guidance file
+- **Echo Prompt**: Comprehensive .roo system prompt
+- **Unified Commands**: Consistent task management across both systems
+- **Git Automation**: Automated commits, staging, and pushes
 
-Once set up, Echo acts as an expert architect and lead developer, using its Memory Bank and detailed task plans to help you write, refactor, and document code efficiently.
+## Quick Start
 
----
+### For New Projects
+1. Copy templates to your project root
+2. Run `/init-echo-system` command
+3. Customize for your project
+4. Begin creating and executing tasks
 
+### For Existing Projects
+1. Deploy templates to project root
+2. Run initialization to analyze existing codebase
+3. Import existing tasks into Echo registry
+4. Begin elite-level development workflow
 
-Welcome to the Echo Hierarchical Coding System! This repository serves as a **live demonstration and research artifact** exploring an AI-driven software development framework. Our primary goal is to enhance code quality, consistency, and development efficiency by addressing common limitations in Large Language Model (LLM) application for complex software engineering tasks. We achieve this through highly structured documentation, meticulous planning enforced by an AI persona, and intelligent task delegation.
+## Benefits
 
-## 🔍 The Core Research: System Prompt & Structured Cognition
+- **Zero Ambiguity**: Research-backed tasks eliminate guesswork
+- **Maximum Quality**: Validation gates prevent incomplete work
+- **Production Ready**: Definition of Done ensures deployment readiness
+- **Systematic Progress**: Registry provides single source of truth
+- **Cross-System Compatibility**: Works with Claude Code and Echo (.roo)
 
-**The intellectual core of this project is the system prompt** that defines the "Echo" AI persona, located in [`prompts/echo_system_prompt.md`](prompts/echo_system_prompt.md).
+## System Architecture
 
-Echo is designed as an expert AI Software Architect and Lead Developer with a crucial constraint: a simulated periodic memory reset. This constraint is not a limitation but a foundational design choice that compels an absolute reliance on an externalized, persistent, and structured knowledge base – the **Memory Bank** – and highly detailed **Task Files**.
+```
+project-root/
+├── CLAUDE.md (Cross-system coordination)
+├── memory-bank/
+│   ├── activeContext.md
+│   ├── productContext.md
+│   ├── techContext.md
+│   ├── systemPatterns.md
+│   ├── testingContext.md
+│   ├── progress.md
+│   ├── components/
+│   ├── cross-cutting/
+│   └── task-completion-reports/
+├── tasks/
+│   ├── ECHO-TASK-REGISTRY.md
+│   ├── ELITE-TASK-TEMPLATE.md
+│   ├── ELITE-STATUS-TRACKING.md
+│   └── ELITE-VALIDATION-GATES.md
+├── .claude/
+│   └── commands/
+└── .roo/
+    └── echo-prompt.md
+```
 
-This repository showcases the file system structure (Memory Bank, Task definitions, etc.) that Echo is designed to navigate and utilize, providing a tangible example of how such a system can be organized.
+## Elite Task Workflow
 
-## 🏛️ Architectural Philosophy & Technical Rationale
+1. **Research Phase**: Comprehensive technical analysis with specific file paths
+2. **Pre-Work Validation**: Gate 1 - Prerequisites and dependency check
+3. **Implementation**: Detailed phases with specific file modifications
+4. **Testing**: 90%+ coverage with comprehensive test strategy
+5. **Completion Validation**: Gate 3 - Definition of Done verification
 
-The Echo system is an experimental approach to **Augmented LLM Cognition** for software development, built on the following principles:
+## Key Features
 
-1.  **Externalized Context & State Management (The Memory Bank):**
-    *   **Problem Addressed:** LLMs possess finite context windows and suffer from context drift or loss over extended interactions or when tackling multifaceted projects.
-    *   **Our Approach:** The `memory-bank/` directory acts as a structured, externalized long-term memory. By segmenting project knowledge (product goals, technical specifications, architectural patterns, testing strategies, live operational context, progress logs, and detailed reference data like database schemas) into discrete, interlinked markdown files, we enable selective and focused context loading. The `reference/` subdirectory allows deep, granular details to be available on-demand.
-    *   **Technical Implication:** Mirrors RAG concepts by providing a structured, queryable knowledge base.
+### Research-First Development
+- All tasks begin with comprehensive research
+- Specific file paths and technical details verified
+- Realistic effort estimates based on actual code analysis
 
-2.  **Hierarchical Task Decomposition & Planning (Echo as Planner):**
-    *   **Problem Addressed:** LLMs can struggle with decomposing complex goals into actionable steps.
-    *   **Our Approach:** Echo, guided by its system prompt and a Task File (derived from `tasks/TEMPLATE.md`), analyzes requirements and consults the Memory Bank to generate an exhaustive, step-by-step implementation plan.
-    *   **Technical Implication:** Enforces "chain-of-thought" reasoning at a meta-level, ensuring complex problems are broken down.
+### Validation Gates
+- **Gate 1**: Pre-work validation (dependencies, prerequisites)
+- **Gate 2**: Mid-work validation (implementation progress)
+- **Gate 3**: Completion validation (Definition of Done)
 
-3.  **Intelligent Delegation & Model Tiering (Planner-Executor Model):**
-    *   **Problem Addressed:** Using a single, high-capability LLM for all development aspects is often sub-optimal.
-    *   **Our Approach:** Echo (Planner) uses a powerful LLM for planning; micro-tasks can then be delegated to cost-effective "Executor" AIs.
-    *   **Technical Implication:** Allows resource optimization and aligns LLM strengths to tasks.
+### Quality Standards
+- 90%+ test coverage requirement
+- Comprehensive error handling
+- Production-ready documentation
+- Cross-system coordination
 
-4.  **Documentation as a First-Class Citizen:**
-    *   **Problem Addressed:** Software documentation is often neglected.
-    *   **Our Approach:** Echo's core constraint makes the Memory Bank non-negotiable, turning a pain point into a systemic strength.
-    *   **Technical Implication:** Enforces a "live" documentation paradigm.
+### Memory Bank Integration
+- Persistent project context across AI sessions
+- Component-specific documentation
+- Progress tracking and milestone management
+- Task completion reports
 
-5.  **Embedded Best Practices (TDD, Structured Logging):**
-    *   **Problem Addressed:** Inconsistent adherence to software engineering best practices.
-    *   **Our Approach:** The task template and Echo's directives embed requirements for verification, testing, and structured context updates.
+## Commands
 
-6.  **Retroactive Documentation & Onboarding to Existing Projects:**
-    *   **Problem Addressed:** Integrating AI into legacy projects with sparse documentation.
-    *   **Our Approach & Key Insight:** When first introduced to an *existing project* (e.g., within an IDE like VS Code via Cline/Roo with filesystem access), Echo is designed to **autonomously perform an initial project analysis.** Triggered by a command like **"Initialize Memory Bank,"** Echo, guided by its "Memory Bank Bootstrap Protocol" (Directive 7 in `prompts/echo_system_prompt.md`), systematically reviews the existing codebase and artifacts. It then **populates the `memory-bank/` structure itself** by:
-        *   Summarizing existing READMEs or design documents into `productContext.md`, etc.
-        *   Identifying technologies for `techContext.md`.
-        *   Inferring architectural patterns for `systemPatterns.md`.
-        *   Analyzing code to draft component overviews or even initial schema details for `reference/database-schema/`.
-    *   **Technical Implication:** This allows the Echo system to **"self-onboard"** to a project, creating its own structured understanding. The Memory Bank becomes living documentation, co-created and maintained by Echo and human developers. Echo may ask clarifying questions during this process to ensure accuracy, particularly regarding high-level project goals or ambiguous code sections.
+### Core Commands
+- `/init-echo-system` - Initialize Echo Task Management System
+- `/update-memory-bank` - Update documentation with git automation
+- `/create-task` - Create new task using Elite template
+- `/update-task-status` - Update task status with validation
 
-## 💡 Influences, Inspirations & Relevant Research
-*   **Prompt Engineering Best Practices:** We heavily leverage principles such as defining a clear Persona, Task, Context, and Format, as outlined in guides like Google's **Prompting guide 101 (Gemini for Google Workspace, 2024 edition)**. The structure of `prompts/echo_system_prompt.md` directly reflects these principles.
-*   **Agentic AI Systems & Hierarchical Task Delegation:** Concepts explored by researchers and tools focusing on multi-agent systems and breaking down tasks for AI. Videos demonstrating practical applications of "micromanaging" LLMs or using "remote agents" have been particularly insightful:
-    *   [Video 1: "Micromanaging Llama 4 for Effective Coding"](https://www.youtube.com/watch?v=VCAa1Isygck) - Demonstrates the planner/executor concept with different model tiers.
-    *   [Video 2: "AI Assisted Coding Is About to Massively Change - Remote Agents"](https://www.youtube.com/watch?v=2c6djdv2Xbo) - Highlights asynchronous task offloading and contextual integrity.
-    *   [Video 3: "Remote Agents will change AI Assisted Programming Forever"](https://www.youtube.com/watch?v=2c6djdv2Xbo) - Showcased model switching and iterative refinement.
-*   **Externalized Memory and RAG (Retrieval Augmented Generation):** While this POC uses direct file access for the Memory Bank, its structure is designed to be compatible with future RAG implementations where the AI could semantically query its knowledge base.
-*   **Cognitive Architectures for AI:** Exploring how structured external knowledge and explicit operational protocols can enhance the reasoning and reliability of LLMs for complex, multi-step tasks.
+### Cross-System Commands
+- Works seamlessly with Claude Code and Echo (.roo)
+- Shared memory bank and task registry
+- Coordinated status updates and progress tracking
 
+## Success Stories
 
-## 🏗️ Project Structure Overview
+Originally developed for a salon management MVP that achieved:
+- 14 comprehensive repositories with standardized error handling
+- Complete test infrastructure with 90%+ coverage
+- Production-ready deployment with elite-level quality
+- Seamless coordination between multiple AI development systems
 
-*   **`README_SYSTEM_OVERVIEW.md`**: **For a deeper dive into the system's conceptual architecture and operational workflow.**
-*   **`memory-bank/`**: The persistent knowledge base.
-    *   `index.md`: Main index.
-    *   `activeContext.md`: Tracks Echo's current operational focus.
-    *   `productContext.md`, `techContext.md`, `systemPatterns.md`, `testingContext.md`, `progress.md`: Core context.
-    *   `reference/`: Detailed, granular reference materials (e.g., full DB schemas, API specs).
-    *   `components/`, `system/`, `cross-cutting/`: Further categorized documentation.
-*   **`tasks/`**: Granular markdown files for development tasks.
-    *   `TEMPLATE.md`: The **mandatory** standard template for all new task files, **used by Echo to structure new tasks**.
-    *   `CREW-001-CrewAI_Orchestration_POC.md`: Example task for setting up a CrewAI proof-of-concept.
-*   **`prompts/`**: System prompts for AI agents.
-    *   `echo_system_prompt.md`: The core system prompt defining the "Echo" AI persona.
-    *   `executor_prompt.md`: A sample prompt for an Executor AI.
-*   **`echo_crew_ai_poc/` (or `src/`)**: Location for implementation source code (e.g., CrewAI POC).
-*   **`output/`**: Default directory for AI-generated code (typically not version-controlled).
-*   **`.gitignore`**: Specifies untracked files.
-*   **`requirements.txt`**: Python dependencies.
+## License
 
-## 🚀 Getting Started with This Demonstrator
-
-1.  **Understand the AI's "Mind":** Review **[`prompts/echo_system_prompt.md`](prompts/echo_system_prompt.md)**. This is crucial for understanding Echo's designed behavior and directives.
-2.  **System Architecture:** Read the [`README_SYSTEM_OVERVIEW.md`](README_SYSTEM_OVERVIEW.md) for a full conceptual breakdown.
-3.  **Initial Setup in Your Project:**
-    *   In your chosen IDE or LLM interaction environment (e.g., VS Code with Cline/Roo, or a custom script), load the content of `prompts/echo_system_prompt.md` as the system prompt for your primary LLM instance (which will now act as Echo).
-    *   You don't need to manually create any files or folders beforehand.
-    *   Set your custom temp to .5 when using gemini 2.5 for the happy place. 
-    *   Use gemini 2.5 pro for the task creation and 2.5 flash for the coding and just be amazed.
-4.  **Initiate Echo & Memory Bank Bootstrap:**
-    *   Start your first session with Echo by issuing a command like: **"Initialize Memory Bank."**
-    *   Echo will then begin its "Memory Bank Bootstrap Protocol" (as per Directive 7 of its system prompt).
-        *   Echo will automatically create all necessary directories and files (`memory-bank/`, `tasks/`, etc.) if they don't exist.
-        *   If it's a new project, it will guide you in creating content for core Memory Bank files by asking targeted questions.
-        *   If it's an existing project with code and some documentation, Echo will attempt to analyze these resources and populate the Memory Bank files (e.g., `productContext.md`, `techContext.md`, component overviews). It may ask clarifying questions about project goals, specific technologies, or architectural choices it infers.
-        *   It will ensure `tasks/TEMPLATE.md` is correctly structured.
-5.  **Engaging Echo for Development Work (Post-Initialization):** See "How to Use This System" below.
-6.  **Running an Automated Implementation (e.g., CrewAI POC):**
-    *   Refer to specific task files like `tasks/CREW-001-CrewAI_Orchestration_POC.md`.
-    *   Set up API keys in a root `.env` file and install dependencies from `requirements.txt`.
-
-## 💡 How to Use This System (Once Initialized and Memory Bank is Populated)
-
-1.  **Define a High-Level Goal/Task for Echo:**
-    *   User provides a development goal (e.g., "Echo, we need to implement a user authentication feature with email/password and Google OAuth.").
-2.  **Echo Creates/Populates the Task File:**
-    *   Echo, using `tasks/TEMPLATE.md`, will create a new task file (e.g., `tasks/features/authentication.md`) or ask the user to confirm a name/location.
-    *   It will then populate this task file by:
-        *   Asking clarifying questions to fill out "🎯 Task Description," "📋 Detailed Requirements," etc.
-        *   Identifying relevant "🧠 Context from Memory Bank" files.
-        *   Crucially, generating the detailed "🛠️ Step-by-Step Implementation Guide / Plan."
-    *   The user reviews and approves/modifies this AI-generated task file.
-3.  **Set Active Context:** `memory-bank/activeContext.md` is updated (often by Echo, confirming with the user) to point to this new, detailed task file.
-4.  **Echo (Planner) Executes the Task File:**
-    *   Echo now proceeds with the detailed plan within the active task file. For each step, it might:
-        *   Generate code snippets itself.
-        *   Prepare precise instructions for an Executor AI.
-5.  **Execution (Executor AI or Manual):** The granular steps from Echo's plan are implemented.
-6.  **Test & Iterate:** Follow testing requirements. Feedback is looped back to Echo if plan adjustments or code fixes are needed.
-7.  **Update Documentation:** Echo guides the update of `activeContext.md`, `progress.md`, and relevant Memory Bank files based on task completion and learnings.
+MIT License - Use in any project, commercial or open source.
 
 ---
-This system represents an ongoing research effort into building robust, context-aware, and efficient AI-assisted software development workflows. We believe this structured approach, especially its ability to retroactively document and onboard to existing systems, holds significant promise. Contributions, feedback, and academic collaboration are highly encouraged.
+
+**The Echo Task Management System: Elite-level precision for maximum development velocity and quality.**
