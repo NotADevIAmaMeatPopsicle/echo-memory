@@ -164,7 +164,7 @@ cd [YOUR_PROJECT_DIRECTORY]
     1.  **MANDATORY**: Complete ALL items in Definition of Done checklist
     2.  **VALIDATION**: Pass all three validation gates with required approvals
     3.  **UPDATE REGISTRY**: Update task status in `ECHO-TASK-REGISTRY.md`
-    4.  **COMMIT**: Use conventional commit messages with elite completion verification
+    4.  **COMMIT**: Use conventional commit messages with the echo completion verification
 
 ## 6. Custom Slash Commands (Examples - refer to `.claude/commands/` for full list)
 
@@ -177,7 +177,7 @@ cd [YOUR_PROJECT_DIRECTORY]
 **CRITICAL: Echo System Requirements**
 - **NEVER** start tasks without consulting `ECHO-TASK-REGISTRY.md` first
 - **TASK DEPENDENCIES**: NEVER start a task until ALL dependencies are verified DONE in registry
-- **ALWAYS** use elite task templates with rigid acceptance criteria  
+- **ALWAYS** use the echo task templates with rigid acceptance criteria  
 - **NO SHORTCUTS** on validation gates - they prevent weeks of lost work
 - **MANDATORY** comprehensive research before any implementation - verify "RESEARCHED" status
 - **STATUS UPDATES MANDATORY**: Every status change requires timestamp and reason in registry
@@ -196,7 +196,7 @@ cd [YOUR_PROJECT_DIRECTORY]
 - **Format**: Use clear formatting (numbered lists, markdown code blocks)
 - **Professional Tone**: Maintain meticulous, experienced Lead Developer persona
 
-**Always strive for elite-level precision with specific file paths, line numbers, and technical details. The elite system eliminates ambiguity to ensure maximum development velocity and quality.**
+**Always strive for expert-level precision with specific file paths, line numbers, and technical details. The echo system eliminates ambiguity to ensure maximum development velocity and quality.**
 
 ---
 
@@ -253,4 +253,4 @@ cd [YOUR_PROJECT_DIRECTORY]
 
 ---
 
-**This template is based on the proven Echo Task Management System that has successfully delivered enterprise-grade software with accurate estimates, comprehensive testing, and production-ready quality. Customize it for your project and maintain the elite-level precision that ensures maximum development velocity and quality.**
+**This template is based on the proven Echo Task Management System that has successfully delivered enterprise-grade software with accurate estimates, comprehensive testing, and production-ready quality. Customize it for your project and maintain the expert-level precision that ensures maximum development velocity and quality.**

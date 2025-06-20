@@ -116,7 +116,7 @@ print_status "Current Date: $CURRENT_DATE"
 echo ""
 
 # Check if target directory has existing Echo system
-if [ -f "$TARGET_DIR/tasks/ELITE-TASK-REGISTRY.md" ]; then
+if [ -f "$TARGET_DIR/tasks/ECHO-TASK-REGISTRY.md" ]; then
     print_warning "Echo Task Management System already exists in target directory"
     read -p "Do you want to overwrite? (y/N): " confirm
     if [[ ! $confirm =~ ^[Yy]$ ]]; then

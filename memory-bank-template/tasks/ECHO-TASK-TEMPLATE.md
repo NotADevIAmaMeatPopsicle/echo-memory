@@ -197,4 +197,4 @@ Provide a clear, concise description of:
 4. **ACCEPTANCE CRITERIA ARE IMMUTABLE** - changes require new task creation
 5. **VALIDATION GATES MUST BE PASSED** - no skipping for "time pressure"
 
-*This template ensures elite-level delivery with zero ambiguity and maximum quality.*
+*This template ensures expert level delivery with zero ambiguity and maximum quality.*
