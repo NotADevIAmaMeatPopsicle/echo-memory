@@ -21,7 +21,7 @@ This template provides essential guidance for Claude Code when working with any 
     *   `memory-bank/next-steps-action-plan.md` - Immediate priorities and action items
     *   `memory-bank/progress.md` - Project milestone tracking
     *   `tasks/ECHO-TASK-REGISTRY.md` - Single source of truth for all tasks
-    *   Any Elite task files currently IN_PROGRESS or recently completed
+    *   Any Echo task files currently IN_PROGRESS or recently completed
     *   Always commit these updates with comprehensive messages explaining changes
 
 *   **Session Start Protocol (MANDATORY):**
@@ -36,7 +36,7 @@ This template provides essential guidance for Claude Code when working with any 
     *   When Echo makes significant changes, it updates `CLAUDE.md` with coordination notes
     *   Always check for Echo coordination messages in `CLAUDE.md` during session start
     *   Update `CLAUDE.md` with your own significant changes and current priorities
-    *   Both systems must maintain consistent Elite task status and documentation
+    *   Both systems must maintain consistent Echo task status and documentation
 
 ## 2. Essential Commands & Workflow
 
@@ -120,7 +120,7 @@ cd [YOUR_PROJECT_DIRECTORY]
 *   **CRITICAL: Echo Task Management System Implemented**:
     *   **AUTHORITATIVE SOURCE**: `tasks/ECHO-TASK-REGISTRY.md` - Single source of truth for all tasks
     *   **DEPRECATED SYSTEMS**: All previous task files are now deprecated
-    *   **USE ONLY**: Elite task templates with rigid acceptance criteria and validation gates
+    *   **USE ONLY**: Echo task templates with rigid acceptance criteria and validation gates
 *   **Current Active Priorities**:
     *   **TASK-XXX**: [TASK DESCRIPTION] ([TIME ESTIMATE]) - [STATUS]
     *   **TASK-XXX**: [TASK DESCRIPTION] ([TIME ESTIMATE]) - [STATUS]
@@ -129,28 +129,28 @@ cd [YOUR_PROJECT_DIRECTORY]
 ## 5. Echo Task Management System (CRITICAL - New Process)
 
 *   **AUTHORITATIVE SOURCE**: `tasks/ECHO-TASK-REGISTRY.md` - ONLY source of truth for tasks
-*   **TASK TEMPLATES**: Use `tasks/ELITE-TASK-TEMPLATE.md` for ALL new tasks
-*   **STATUS TRACKING**: Follow `tasks/ELITE-STATUS-TRACKING.md` for rigid status management
-*   **VALIDATION GATES**: Enforce `tasks/ELITE-VALIDATION-GATES.md` - NO EXCEPTIONS
+*   **TASK TEMPLATES**: Use `tasks/ECHO-TASK-TEMPLATE.md` for ALL new tasks
+*   **STATUS TRACKING**: Follow `tasks/ECHO-STATUS-TRACKING.md` for rigid status management
+*   **VALIDATION GATES**: Enforce `tasks/ECHO-VALIDATION-GATES.md` - NO EXCEPTIONS
 *   **DEPRECATED**: Do NOT use legacy task files - all deprecated
 *   **Research Foundation**: All tasks have comprehensive research with specific file paths and technical details
 
-*   **Research-First Elite Approach:**
-    *   All Elite tasks begin with comprehensive research phase
+*   **Research-First Echo Approach:**
+    *   All Echo tasks begin with comprehensive research phase
     *   Research must include specific file paths, line numbers, and technical details  
     *   Tasks marked "RESEARCHED" have verified implementation details and realistic estimates
     *   Planning must reference research findings for accurate technical approach
     *   **Zero Ambiguity**: Comprehensive research eliminates guesswork
     *   **Accurate Estimates**: Research-based sizing vs. optimistic guessing
 
-*   **Elite Task Status Management (5-State System):**
+*   **Echo Task Status Management (5-State System):**
     *   **BLOCKED**: Cannot proceed due to dependencies or external factors
     *   **READY**: All dependencies met, comprehensive research completed, can start immediately
     *   **IN_PROGRESS**: Work has begun, person assigned and actively working
     *   **TESTING**: Implementation complete, validation and testing in progress
     *   **DONE**: All acceptance criteria met, Definition of Done 100% complete
 
-*   **Elite Task Execution Workflow:**
+*   **Echo Task Execution Workflow:**
     1.  **REGISTRY CHECK**: Verify task status and dependencies in `ECHO-TASK-REGISTRY.md`
     2.  **RESEARCH VALIDATION**: Confirm task has "RESEARCHED" status with technical details
     3.  **PRE-WORK VALIDATION**: Complete Gate 1 checklist before starting any task
@@ -174,7 +174,7 @@ cd [YOUR_PROJECT_DIRECTORY]
 *   `/propose-commit-message`
 *   `/self-review --file="@file" --against-patterns="[@pattern_doc1.md, @pattern_doc2.md]"`
 
-**CRITICAL: Elite System Requirements**
+**CRITICAL: Echo System Requirements**
 - **NEVER** start tasks without consulting `ECHO-TASK-REGISTRY.md` first
 - **TASK DEPENDENCIES**: NEVER start a task until ALL dependencies are verified DONE in registry
 - **ALWAYS** use elite task templates with rigid acceptance criteria  
@@ -189,10 +189,10 @@ cd [YOUR_PROJECT_DIRECTORY]
 - Verify dependency completion in `ECHO-TASK-REGISTRY.md` before changing task status to IN_PROGRESS
 - If dependencies are blocked, dependent tasks remain **BLOCKED** until resolution
 
-**Elite Task Communication Principles:**
+**Echo Task Communication Principles:**
 - **Clarity and Conciseness**: Instructions must be unambiguous and to the point
 - **Specificity**: Provide all necessary details (file names, function signatures, expected behavior)
-- **Context Provision**: Plans derived from rich Elite Task context and research findings
+- **Context Provision**: Plans derived from rich Echo Task context and research findings
 - **Format**: Use clear formatting (numbered lists, markdown code blocks)
 - **Professional Tone**: Maintain meticulous, experienced Lead Developer persona
 
@@ -227,8 +227,8 @@ cd [YOUR_PROJECT_DIRECTORY]
    - Define your specific coding standards and security requirements
 
 ### 2. **Set Up Echo Task Management System:**
-   - Create `tasks/ECHO-TASK-REGISTRY.md` using the Elite Task Registry format
-   - Create `tasks/ELITE-TASK-TEMPLATE.md` with your project's task template
+   - Create `tasks/ECHO-TASK-REGISTRY.md` using the Echo Task Registry format
+   - Create `tasks/ECHO-TASK-TEMPLATE.md` with your project's task template
    - Establish validation gates and status tracking documents
 
 ### 3. **Initialize Memory Bank Structure:**

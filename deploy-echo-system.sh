@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Elite Task Management System Deployment Script
-# This script deploys the complete Elite Task Management System to a new project
+# Echo Task Management System Deployment Script
+# This script deploys the complete Echo Task Management System to a new project
 
 set -e
 
@@ -108,16 +108,16 @@ if [ ! -d "$TEMPLATE_DIR" ]; then
     exit 1
 fi
 
-print_header "Elite Task Management System Deployment"
+print_header "Echo Task Management System Deployment"
 print_status "Project Name: $PROJECT_NAME"
 print_status "Project Description: $PROJECT_DESCRIPTION"
 print_status "Target Directory: $TARGET_DIR"
 print_status "Current Date: $CURRENT_DATE"
 echo ""
 
-# Check if target directory has existing Elite system
+# Check if target directory has existing Echo system
 if [ -f "$TARGET_DIR/tasks/ELITE-TASK-REGISTRY.md" ]; then
-    print_warning "Elite Task Management System already exists in target directory"
+    print_warning "Echo Task Management System already exists in target directory"
     read -p "Do you want to overwrite? (y/N): " confirm
     if [[ ! $confirm =~ ^[Yy]$ ]]; then
         print_status "Deployment cancelled"
@@ -214,12 +214,12 @@ fi
 
 print_header "Deployment Complete!"
 
-print_status "Elite Task Management System successfully deployed to: $TARGET_DIR"
+print_status "Echo Task Management System successfully deployed to: $TARGET_DIR"
 echo ""
 print_status "Files created:"
 echo "  ✓ CLAUDE.md - Main guidance file for Claude Code"
 echo "  ✓ memory-bank/ - Complete documentation structure"
-echo "  ✓ tasks/ - Elite Task Management System"
+echo "  ✓ tasks/ - Echo Task Management System"
 echo "  ✓ .claude/commands/ - Custom slash commands"
 echo "  ✓ .roo/ - Echo prompt for cross-system coordination"
 echo ""
@@ -228,28 +228,28 @@ print_header "Next Steps"
 echo "1. Review and customize the generated files for your specific project"
 echo "2. Update technology stack placeholders in techContext.md"
 echo "3. Complete project requirements in productContext.md"
-echo "4. Define your first task using the Elite Task Template"
-echo "5. Initialize git repository and commit the Elite system"
+echo "4. Define your first task using the Echo Task Template"
+echo "5. Initialize git repository and commit the Echo system"
 echo ""
 
 print_status "Git commands to get started:"
 echo "  cd $TARGET_DIR"
 echo "  git init"
 echo "  git add ."
-echo "  git commit -m \"feat: Initialize Elite Task Management System"
+echo "  git commit -m \"feat: Initialize Echo Task Management System"
 echo ""
-echo "  Elite Task Management System deployed for $PROJECT_NAME"
+echo "  Echo Task Management System deployed for $PROJECT_NAME"
 echo ""
 echo "  - Complete memory bank structure with documentation templates"
-echo "  - Elite task registry and templates for production-ready development"
+echo "  - Echo task registry and templates for production-ready development"
 echo "  - Cross-system coordination between Claude Code and Echo (.roo)"
 echo "  - Quality gates and validation framework"
 echo "  - Comprehensive testing standards and TDD approach"
 echo ""
-echo "  🤖 Generated with Elite Task Management System"
+echo "  🤖 Generated with Echo Task Management System"
 echo "  \""
 echo ""
 
-print_header "Elite Task Management System Ready!"
-print_status "Your project is now equipped with the battle-tested Elite system."
+print_header "Echo Task Management System Ready!"
+print_status "Your project is now equipped with the battle-tested Echo system."
 print_status "Happy coding! 🚀"

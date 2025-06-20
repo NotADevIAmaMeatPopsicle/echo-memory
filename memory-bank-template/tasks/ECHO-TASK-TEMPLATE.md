@@ -1,4 +1,4 @@
-# ELITE TASK TEMPLATE
+# ECHO TASK TEMPLATE
 
 **Task ID:** `TASK-XXX` (Sequential numbering: TASK-001, TASK-002, etc.)
 **Date Created:** YYYY-MM-DD

@@ -38,7 +38,7 @@ Your task is to update the project's Memory Bank comprehensively.
         *   Conventional commit format: "docs(memory-bank): Update MB for completion of ${1}"
         *   Summary of changes made: Brief description of "${2}"
         *   Files affected: List of Memory Bank files updated
-        *   Elite task status updates: Any task registry or status changes
+        *   Echo task status updates: Any task registry or status changes
         *   Generated with Claude Code signature
     *   Push changes: Execute `git push` to sync with remote repository
     *   

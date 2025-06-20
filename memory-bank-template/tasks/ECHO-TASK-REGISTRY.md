@@ -1,4 +1,4 @@
-# ELITE TASK REGISTRY - SINGLE SOURCE OF TRUTH
+# ECHO TASK REGISTRY - SINGLE SOURCE OF TRUTH
 
 **Last Updated:** [CURRENT_DATE]
 **Registry Version:** 1.0
@@ -36,7 +36,7 @@
 
 | Task ID | Title | Completion Date | Validator |
 |---------|-------|----------------|-----------|
-| ✅ ELITE-INIT | Echo Task Management System Initialization | [CURRENT_DATE] | Claude |
+| ✅ ECHO-INIT | Echo Task Management System Initialization | [CURRENT_DATE] | Claude |
 
 ---
 
@@ -47,7 +47,7 @@ Echo Task Management System initialized with comprehensive research-first approa
 
 | Component | Status | Research Evidence |
 |-----------|--------|-------------------|
-| **Task Infrastructure** | ✅ **COMPLETE** | Elite templates and registry operational |
+| **Task Infrastructure** | ✅ **COMPLETE** | Echo templates and registry operational |
 | **Memory Bank** | ✅ **COMPLETE** | All core documentation files created |
 | **Cross-System Integration** | ✅ **COMPLETE** | Claude Code and Echo (.roo) coordination established |
 | **Quality Framework** | ✅ **COMPLETE** | Validation gates and testing standards implemented |
@@ -56,14 +56,14 @@ Echo Task Management System initialized with comprehensive research-first approa
 
 | Task | Original Estimate | Research Estimate | **Accuracy Target** |
 |------|------------------|-------------------|-------------------|
-| ELITE-INIT | Unknown | 1-2h | **ON TRACK** ✅ |
+| ECHO-INIT | Unknown | 1-2h | **ON TRACK** ✅ |
 
 **Key Success:** Echo Task Management System provides foundation for accurate estimation and high-quality delivery.
 
 ## DEPRECATED SYSTEMS (DO NOT USE)
 
 ⚠️ **These approaches are deprecated and should NOT be referenced:**
-- Individual task files without Elite format
+- Individual task files without Echo format
 - Task management without research validation
 - Status tracking without validation gates
 - Implementation without Definition of Done checklist

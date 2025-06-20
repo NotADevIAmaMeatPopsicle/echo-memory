@@ -1,6 +1,6 @@
-# Command: /init-elite-system
-# Usage: /init-elite-system [project_name] [project_description]
-# Example: /init-elite-system "My Awesome App" "A revolutionary productivity application"
+# Command: /init-echo-system
+# Usage: /init-echo-system [project_name] [project_description]
+# Example: /init-echo-system "My Awesome App" "A revolutionary productivity application"
 
 You are tasked with initializing the Echo Task Management System for a new project. This command deploys the complete Echo Task Management System with memory bank structure, cross-system coordination, and production-ready development standards.
 
@@ -32,7 +32,7 @@ You are tasked with initializing the Echo Task Management System for a new proje
    - Set up component and cross-cutting documentation directories
 
 4. **Configure Development Standards:**
-   - Deploy Elite Task templates with project-specific customization
+   - Deploy Echo Task templates with project-specific customization
    - Set up validation gates and status tracking
    - Configure testing requirements and quality standards
    - Initialize issue tracking and task completion report structure
@@ -76,9 +76,9 @@ project-root/
 │   └── issues/
 ├── tasks/
 │   ├── ECHO-TASK-REGISTRY.md
-│   ├── ELITE-TASK-TEMPLATE.md
-│   ├── ELITE-STATUS-TRACKING.md
-│   └── ELITE-VALIDATION-GATES.md
+│   ├── ECHO-TASK-TEMPLATE.md
+│   ├── ECHO-STATUS-TRACKING.md
+│   └── ECHO-VALIDATION-GATES.md
 ├── .claude/
 │   └── commands/
 │       └── update-memory-bank.md
