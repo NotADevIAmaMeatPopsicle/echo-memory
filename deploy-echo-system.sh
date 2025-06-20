@@ -251,5 +251,5 @@ echo "  \""
 echo ""
 
 print_header "Echo Task Management System Ready!"
-print_status "Your project is now equipped with the battle-tested Echo system."
+print_status "Your project is now equipped with the production-ready Echo system."
 print_status "Happy coding! 🚀"

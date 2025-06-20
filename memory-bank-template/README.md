@@ -65,7 +65,7 @@ memory-bank-template/
 ## Benefits
 
 - **Zero Setup Time**: Complete Echo system deployed in minutes
-- **Proven Success**: Based on battle-tested salon management project
+- **Proven Success**: Based on validated development methodology
 - **Cross-System Ready**: Works with both Claude Code and Echo (.roo)
 - **Production Quality**: Includes all validation gates and quality controls
 - **Customizable**: Easy to adapt to any project type or technology stack
